@@ -1,3 +1,5 @@
+package model;
+
 public class Sala {
     private String numero;
     private TipoSala tipo;

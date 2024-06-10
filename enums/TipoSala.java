@@ -1,3 +1,5 @@
+package enums;
+
 public enum TipoSala {
     SALA_COMUM,
     LABORATORIO,
