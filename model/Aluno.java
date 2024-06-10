@@ -3,6 +3,8 @@ package model;
 import util.Endereco;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Aluno {
     private String nome;
@@ -10,6 +12,7 @@ public class Aluno {
     private Turma turma;
     private Endereco endereco;
     private LocalDate dataDeNascimento;
+    private List<Nota> notas;
 
     public Aluno(String nome, int idAluno, Turma turma, Endereco endereco, LocalDate dataDeNascimento) {
         this.nome = nome;
@@ -17,6 +20,7 @@ public class Aluno {
         this.turma = turma;
         this.endereco = endereco;
         this.dataDeNascimento = dataDeNascimento;
+        this.notas = new ArrayList<>();
     }
 
     public String getNome() {
@@ -58,4 +62,14 @@ public class Aluno {
     public void setDataDeNascimento(LocalDate dataDeNascimento) {
         this.dataDeNascimento = dataDeNascimento;
     }
+
+    public List<Nota> getNotas() {
+        return notas;
+    }
+
+    public void adicionarNota(Nota nota) {
+        this.notas.add(nota);
+    }
+
+
 }

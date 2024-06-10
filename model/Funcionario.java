@@ -11,6 +11,9 @@ public abstract class Funcionario {
     private Cargo cargo;
     private double salario;
 
+    public Funcionario(String nome, Endereco endereco, LocalDate dataDeNascimento, Cargo cargo, double salario) {
+    }
+
     public String getNome() {
         return nome;
     }
