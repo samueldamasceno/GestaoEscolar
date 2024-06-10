@@ -1,5 +1,7 @@
 package model;
 
+import enums.TipoSala;
+
 public class Sala {
     private String numero;
     private TipoSala tipo;

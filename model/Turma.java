@@ -1,5 +1,7 @@
 package model;
 
+import enums.Periodo;
+
 import java.util.List;
 
 public class Turma {

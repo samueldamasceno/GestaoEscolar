@@ -1,5 +1,7 @@
 package model;
 
+import util.Endereco;
+
 import java.time.LocalDate;
 
 public abstract class Funcionario {
